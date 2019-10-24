@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Create New User
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h1>Create New User</h1>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [(ngModel)]='name'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input [(ngModel)]='email'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Biography</ion-label>
+      <ion-textarea [(ngModel)]='biography'></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-button class="primary" (click)="onSubmit()">Create New User</ion-button>
+    </ion-item>
+  </div>
+</ion-content>
